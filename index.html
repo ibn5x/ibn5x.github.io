@@ -14,7 +14,10 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-    
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+      
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
         <style>
             .card {
               box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -34,6 +37,10 @@
             .container {
               padding: 2px 16px;
             }
+
+          
+      
+
         </style>
     
     </head>
@@ -125,8 +132,13 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Developing</h2>
 
+                   
                     <div class="d-flex flex-column flex-md-row justify-content-around mb-5">
-                        <div class="card" style="width: 18rem;">
+
+                       
+
+                        
+                          <div class="card" style="width: 18rem;">
                             <h4 class="card-title text-muted">Wallet Monsters</h4>
                             <a href="https://walletmonsters.io" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="assets/img/WMPOWEREDBY.jpg" alt="Tile Based Game With crypto economy"></a>
                            
@@ -153,8 +165,7 @@
                             </div>
                             
                             </div>
-                          </div>
-                          
+                          </div>                         
                           <div class="card" style="width: 18rem;">
                             <h4 class="card-title text-muted">The Crypto Homies</h4>
                             <a href="https://thecryptohomies.com" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="assets/img/The Homie Collection logo.jpg" alt="Tile Based Game With crypto economy"></a>
@@ -183,7 +194,6 @@
                             
                             </div>
                           </div>
-
                           <div class="card" style="width: 18rem;">
                             <h4 class="card-title text-muted">Hodl Helper</h4>
                             <a href="https://hodlehelper.io" target="_blank" rel="noopener noreferrer"><img class="card-img-top" src="assets/img/HodleHelper pic 6.jpg" alt="Tile Based Game With crypto economy"></a>
@@ -203,6 +213,7 @@
                             
                             </div>
                           </div>
+                      
                           </div>
                     
                     
@@ -302,9 +313,33 @@
                 <div class="resume-section-content">
                 <h2 class="mb-5">Projects</h2>
 
-                 <!--Aavegotchi Raiders-->
+                 
                  <div class="d-flex flex-wrap flex-column flex-md-row justify-content-around mb-5">
-                    <div class="card col-md-4 mx-2 card sm mb-4" style="width: 15rem;">
+                     <!--50/50 Coin Flip-->
+                    <div class="card col-md-5 mx-2 card sm mb-4" style="width: 15rem;">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <a href="https://ropsten.etherscan.io/address/0xd921b219d5f9979cbda28f0a2c1d036ce65c0091#internaltx"><img src="assets/img/CasinoDapp.jpg" alt="" width ="238px" ></a>
+                          </div>
+                            <div class="card-body">
+                              <div class="flex-shrink-0"><span class="text-primary">September 2021</span></div>
+                              <div class="subheading mb-3"> 50/50 Coin Flip</div> 
+                              <p class="card-text">
+                                This serverless DApp is running on top of the Ethereum Network,
+                                 built using web3.js and Morlas.io. The casino-style DApp allows users to place a bet to double 
+                                 their money with 50/50 odds. The smart contract was written with a best-of-practice CHECK-EFFECTS-INTERACTIONS
+                                pattern to minimize potential exploitations. Deployed on Ropsten test net.
+                                
+                                <br>
+                                <div style="display: flex; align-items: center; justify-content: center;">
+                                    <a class="btn btn-primary" href="https://ibn5x.github.io/coinflipTestNet/" target="blank_">Play Now</a>
+                                </div>
+                               
+                              </p>
+                            </div>
+                    </div>
+                    
+                    <!--Aavegotchi Raiders-->
+                    <div class="card col-md-5 mx-2 card sm mb-4" style="width: 15rem;">
                         <div class="embed-responsive embed-responsive-16by9">
                             <a href="https://www.youtube.com/watch?v=T84UWYxziwI"><img src="assets/img/AavegotchiRaidersLogo.png" alt="" width ="238px"></a>
                           </div>
@@ -326,7 +361,7 @@
                     </div>
                     <!--Edutainment DApp-->
                     <div class="d-flex flex-wrap flex-column flex-md-row justify-content-around mb-5">
-                    <div class="card col-md-4 mx-2 card sm mb-4" style="width: 15rem;">
+                    <div class="card col-md-5 mx-2 card sm mb-4" style="width: 15rem;">
                         <div class="embed-responsive embed-responsive-16by9">
                             <img src="assets/img/FCWL.png" alt="" width ="238px">
                           </div>
@@ -701,9 +736,14 @@
             </section>
             <hr class="m-0" />
         </div>
+        <script>
+
+
+        </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/projects.js"></script>
     </body>
 </html>
